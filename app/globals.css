@@ -13,12 +13,7 @@
 :root {
   --background: #F5F1EA;
   --foreground: #2B2B2B;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --navbar-height: 72px;
 }
 
 html {
@@ -37,13 +32,16 @@ body {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #F5F1EA;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #B89B5E;
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #5B3A29;
 }
@@ -63,16 +61,17 @@ body {
   opacity: 1 !important;
 }
 
-/* Gold underline effect */
+/* Gold underline effect on section headings */
 .gold-underline {
   position: relative;
   display: inline-block;
+  padding-bottom: 14px;
 }
 
 .gold-underline::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
@@ -80,7 +79,7 @@ body {
   background: linear-gradient(90deg, transparent, #B89B5E, transparent);
 }
 
-/* Section spacing */
+/* Consistent section vertical padding */
 .section-padding {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -91,4 +90,10 @@ body {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
+}
+
+/* Offset anchor targets below fixed navbar */
+section[id],
+footer[id] {
+  scroll-margin-top: var(--navbar-height);
 }

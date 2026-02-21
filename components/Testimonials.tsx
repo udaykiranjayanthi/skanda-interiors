@@ -15,8 +15,8 @@ function StarRating() {
             {[...Array(5)].map((_, i) => (
                 <svg
                     key={i}
-                    width="16"
-                    height="16"
+                    width="15"
+                    height="15"
                     viewBox="0 0 24 24"
                     fill="#B89B5E"
                     aria-hidden="true"
@@ -31,7 +31,8 @@ function StarRating() {
 export default function Testimonials() {
     return (
         <section id="testimonials" className="section-padding bg-[#D8CFC4]">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
                 {/* Header */}
                 <div className="text-center mb-16">
                     <motion.span
@@ -45,10 +46,10 @@ export default function Testimonials() {
                     <motion.h2
                         {...fadeUp}
                         transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-                        className="text-[#2B2B2B] gold-underline"
+                        className="text-[#2B2B2B] gold-underline mb-2"
                         style={{
                             fontFamily: "var(--font-playfair)",
-                            fontSize: "clamp(2rem, 4vw, 2.75rem)",
+                            fontSize: "clamp(1.9rem, 4vw, 2.6rem)",
                             fontWeight: 600,
                         }}
                     >
@@ -56,44 +57,44 @@ export default function Testimonials() {
                     </motion.h2>
                 </div>
 
-                {/* Testimonials Grid */}
-                <div className="grid md:grid-cols-3 gap-6">
+                {/* Cards — overflow-visible so the quote mark is not clipped */}
+                <div className="grid md:grid-cols-3 gap-6 overflow-visible">
                     {TESTIMONIALS.map(({ quote, name, location }, i) => (
                         <motion.div
                             key={name}
                             {...fadeUp}
                             transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.12 }}
-                            className="bg-[#F5F1EA] p-8 relative group hover:shadow-xl transition-shadow duration-500"
+                            className="bg-[#F5F1EA] p-8 pt-10 relative group hover:shadow-xl transition-shadow duration-500"
                         >
-                            {/* Decorative quote mark */}
+                            {/* Decorative quote mark — sits above the card via absolute + negative top */}
                             <div
-                                className="absolute -top-4 left-8 text-7xl text-[#B89B5E]/25 leading-none select-none pointer-events-none"
+                                className="absolute top-3 left-6 text-6xl text-[#B89B5E]/20 leading-none select-none pointer-events-none"
                                 style={{ fontFamily: "var(--font-playfair)" }}
                                 aria-hidden="true"
                             >
-                                "
+                                &ldquo;
                             </div>
 
                             <StarRating />
 
                             <p
-                                className="text-[#2B2B2B]/80 text-sm md:text-base leading-relaxed mb-8 italic"
+                                className="text-[#2B2B2B]/75 text-sm md:text-[15px] leading-[1.9] mb-8 italic"
                                 style={{ fontFamily: "var(--font-playfair)" }}
                             >
                                 &ldquo;{quote}&rdquo;
                             </p>
 
                             <div className="flex items-center gap-3">
-                                <div className="w-8 h-px bg-[#B89B5E]" />
+                                <div className="w-7 h-px bg-[#B89B5E] shrink-0" />
                                 <div>
                                     <p
-                                        className="text-[#5B3A29] font-semibold text-sm"
+                                        className="text-[#5B3A29] font-semibold text-sm leading-tight"
                                         style={{ fontFamily: "var(--font-montserrat)" }}
                                     >
                                         {name}
                                     </p>
                                     <p
-                                        className="text-[#2B2B2B]/50 text-xs tracking-wide"
+                                        className="text-[#2B2B2B]/50 text-xs tracking-wide mt-0.5"
                                         style={{ fontFamily: "var(--font-montserrat)" }}
                                     >
                                         {location}
@@ -101,8 +102,8 @@ export default function Testimonials() {
                                 </div>
                             </div>
 
-                            {/* Bottom gold accent */}
-                            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#B89B5E]/40 to-transparent group-hover:via-[#B89B5E] transition-all duration-500" />
+                            {/* Bottom gold accent bar */}
+                            <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#B89B5E]/30 to-transparent group-hover:via-[#B89B5E] transition-all duration-500" />
                         </motion.div>
                     ))}
                 </div>
