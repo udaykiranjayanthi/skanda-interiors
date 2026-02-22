@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SITE_NAME, SITE_TAGLINE, PHONE_NUMBER, EMAIL, ADDRESS } from "@/lib/constants";
+import { SITE_NAME, SITE_TAGLINE, PHONE_NUMBER, PHONE_NUMBER_2, EMAIL, ADDRESS } from "@/lib/constants";
 
 export default function VisitingCard() {
     return (
@@ -68,7 +68,13 @@ export default function VisitingCard() {
                             href={`tel:+${PHONE_NUMBER}`}
                             className="text-[#D8CFC4] text-sm hover:text-[#B89B5E] transition-colors tracking-widest"
                         >
-                            +{PHONE_NUMBER}
+                            +91 97011 61430
+                        </a>
+                        <a
+                            href={`tel:+${PHONE_NUMBER_2}`}
+                            className="text-[#D8CFC4] text-sm hover:text-[#B89B5E] transition-colors tracking-widest"
+                        >
+                            +91 94945 37985
                         </a>
                         <a
                             href={`mailto:${EMAIL}`}

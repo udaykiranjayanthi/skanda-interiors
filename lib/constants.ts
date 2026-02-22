@@ -1,11 +1,12 @@
 export const SITE_NAME = "Skanda Interiors";
-export const SITE_TAGLINE = "Luxury Interior Studio";
+export const SITE_TAGLINE = "Transform Space With Style";
 
-export const PHONE_NUMBER = "919876543210"; // Replace with actual number
-export const EMAIL = "hello@skandainteriors.com";
-export const ADDRESS = "42, Brigade Road, Bangalore, Karnataka – 560001";
+export const PHONE_NUMBER = "919701161430";  // Primary — used for WhatsApp
+export const PHONE_NUMBER_2 = "919494537985";  // Secondary
+export const EMAIL = "skandaluxuryinteriordesigns@gmail.com";
+export const ADDRESS = "Hyderabad | Andhra Pradesh";
 export const WORKING_HOURS = "Mon – Sat: 10:00 AM – 7:00 PM";
-export const INSTAGRAM_URL = "https://instagram.com/skandainteriors";
+export const INSTAGRAM_URL = "https://instagram.com/skandainterior";
 export const FACEBOOK_URL = "https://facebook.com/skandainteriors";
 
 export const WHATSAPP_URL = `https://wa.me/${PHONE_NUMBER}?text=Hello%20Skanda%20Interiors%2C%20I%20am%20interested%20in%20your%20interior%20services.`;
@@ -99,8 +100,8 @@ export const TESTIMONIALS = [
 ];
 
 export const VALUES = [
-  { icon: "🎯", label: "Precision Craftsmanship" },
-  { icon: "💎", label: "Premium Materials" },
-  { icon: "✨", label: "Personalized Designs" },
-  { icon: "🔑", label: "Seamless Execution" },
+  { icon: "target", label: "Precision Craftsmanship" },
+  { icon: "diamond", label: "Premium Materials" },
+  { icon: "sparkle", label: "Personalized Designs" },
+  { icon: "key", label: "Seamless Execution" },
 ];

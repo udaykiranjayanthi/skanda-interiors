@@ -10,6 +10,33 @@ const fadeUp = {
     viewport: { once: true, margin: "-80px" },
 };
 
+const VALUE_ICONS: Record<string, React.ReactNode> = {
+    target: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+        </svg>
+    ),
+    diamond: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M6 3h12l4 6-10 13L2 9z" />
+            <path d="M2 9h20" />
+        </svg>
+    ),
+    sparkle: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+        </svg>
+    ),
+    key: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <circle cx="7.5" cy="15.5" r="5.5" />
+            <path d="M21 2l-9.6 9.6M15.5 7.5L19 11M18 3l3 3" />
+        </svg>
+    ),
+};
+
 export default function About() {
     return (
         <section id="about" className="section-padding bg-[#F5F1EA]">
@@ -113,7 +140,9 @@ export default function About() {
                                     transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 + i * 0.08 }}
                                     className="flex items-center gap-3 p-4 border border-[#D8CFC4] hover:border-[#B89B5E] hover:bg-white transition-all duration-300 group"
                                 >
-                                    <span className="text-lg shrink-0">{icon}</span>
+                                    <div className="shrink-0 text-[#B89B5E] group-hover:text-[#5B3A29] transition-colors duration-300">
+                                        {VALUE_ICONS[icon]}
+                                    </div>
                                     <span
                                         className="text-[13px] text-[#2B2B2B] group-hover:text-[#5B3A29] transition-colors font-medium leading-tight"
                                         style={{ fontFamily: "var(--font-montserrat)" }}

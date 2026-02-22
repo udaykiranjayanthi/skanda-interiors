@@ -39,8 +39,8 @@ export default function Navbar() {
         <>
             <nav
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-                        ? "bg-[#F5F1EA] shadow-md py-3"
-                        : "bg-transparent py-5"
+                    ? "bg-[#F5F1EA] shadow-md py-3"
+                    : "bg-transparent py-5"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -61,7 +61,7 @@ export default function Navbar() {
                             className={`text-[10px] tracking-[0.3em] uppercase transition-colors duration-500 ${scrolled ? "text-[#B89B5E]" : "text-[#D8CFC4]"
                                 }`}
                         >
-                            Luxury Interior Studio
+                            Transform Space With Style
                         </span>
                     </a>
 
@@ -74,12 +74,12 @@ export default function Navbar() {
                                     <button
                                         onClick={() => handleNavClick(href)}
                                         className={`text-[13px] uppercase tracking-widest font-medium transition-all duration-300 relative pb-1 cursor-pointer ${scrolled
-                                                ? isActive
-                                                    ? "text-[#B89B5E]"
-                                                    : "text-[#2B2B2B] hover:text-[#B89B5E]"
-                                                : isActive
-                                                    ? "text-[#B89B5E]"
-                                                    : "text-[#F5F1EA] hover:text-[#B89B5E]"
+                                            ? isActive
+                                                ? "text-[#B89B5E]"
+                                                : "text-[#2B2B2B] hover:text-[#B89B5E]"
+                                            : isActive
+                                                ? "text-[#B89B5E]"
+                                                : "text-[#F5F1EA] hover:text-[#B89B5E]"
                                             }`}
                                     >
                                         {label}
@@ -136,7 +136,7 @@ export default function Navbar() {
                                 {SITE_NAME.toUpperCase()}
                             </span>
                             <span className="text-[10px] tracking-[0.3em] uppercase text-[#B89B5E]">
-                                Luxury Interior Studio
+                                Transform Space With Style
                             </span>
                         </div>
 

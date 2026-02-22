@@ -22,7 +22,7 @@ export default function Footer() {
                             className="text-[#B89B5E] text-[9px] tracking-[0.35em] uppercase mt-0.5"
                             style={{ fontFamily: "var(--font-montserrat)" }}
                         >
-                            Luxury Interior Studio
+                            Transform Space With Style
                         </span>
                     </div>
 
