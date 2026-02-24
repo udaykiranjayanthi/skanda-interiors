@@ -53,31 +53,57 @@ export const SERVICES = [
   },
 ];
 
+
 export const PORTFOLIO_IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1400&q=80",
-    alt: "Luxury Living Room",
-    label: "Luxury Living Room – Bangalore",
+    src: "/images/living room.jpeg",
+    alt: "Luxury Living Room Interior",
+    label: "Luxury Living Room – Hyderabad",
   },
   {
-    src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1400&q=80",
-    alt: "Master Bedroom Suite",
-    label: "Master Bedroom Suite – Chennai",
+    src: "/images/bedroom wardrobe.jpeg",
+    alt: "Elegant Bedroom Wardrobe",
+    label: "Elegant Bedroom Wardrobe – Hyderabad",
   },
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&q=80",
-    alt: "Modular Kitchen",
-    label: "Modular Kitchen – Hyderabad",
+    src: "/images/bedroom wardrobe with vanity 1.jpeg",
+    alt: "Bedroom Wardrobe with Vanity",
+    label: "Bedroom Wardrobe with Vanity – Hyderabad",
   },
   {
-    src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1400&q=80",
-    alt: "Modern Villa Exterior",
-    label: "Modern Villa – Mysore",
+    src: "/images/bedroom wardrobe with vanity 2.jpeg",
+    alt: "Bedroom Wardrobe with Vanity II",
+    label: "Bedroom Wardrobe with Vanity II – Hyderabad",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1400&q=80",
-    alt: "Dining Space",
-    label: "Elegant Dining Space – Bangalore",
+    src: "/images/l kitchen.jpeg",
+    alt: "L-Shaped Modular Kitchen",
+    label: "L-Shaped Modular Kitchen – Hyderabad",
+  },
+  {
+    src: "/images/sleek wardrobe.jpeg",
+    alt: "Sleek Custom Wardrobe",
+    label: "Sleek Custom Wardrobe – Hyderabad",
+  },
+  {
+    src: "/images/caibents.jpeg",
+    alt: "Premium Wall Cabinets",
+    label: "Premium Wall Cabinets – Hyderabad",
+  },
+  {
+    src: "/images/display unit.jpeg",
+    alt: "Custom Display Unit",
+    label: "Custom Display Unit – Hyderabad",
+  },
+  {
+    src: "/images/tv cabinet.jpeg",
+    alt: "Designer TV Cabinet",
+    label: "Designer TV Cabinet – Hyderabad",
+  },
+  {
+    src: "/images/pvd partition.jpeg",
+    alt: "PVD Partition",
+    label: "PVD Partition – Hyderabad",
   },
 ];
 
