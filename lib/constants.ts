@@ -24,17 +24,17 @@ export const SERVICES = [
   {
     title: "Residential Interiors",
     description: "Bespoke living spaces designed with warmth, elegance, and premium materials tailored to your lifestyle.",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
   },
   {
     title: "Modular Kitchens",
     description: "Precision-crafted modular kitchens blending functionality with sophisticated design aesthetics.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1701421047855-d7bafd8d6f69?w=800&q=80",
   },
   {
     title: "Custom Wardrobes",
     description: "Tailor-made wardrobes with refined finishes that maximise space while elevating your bedroom.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1672137233327-37b0c1049e77?w=800&q=80",
   },
   {
     title: "Commercial Interiors",
@@ -47,9 +47,9 @@ export const SERVICES = [
     image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",
   },
   {
-    title: "Turnkey Interior Projects",
-    description: "End-to-end execution from concept to completion — fully managed, zero stress for you.",
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+    title: "Living Room & TV",
+    description: "Elegant living room layouts and custom TV units designed to create a sophisticated hub for relaxation and entertainment.",
+    image: "https://images.unsplash.com/photo-1745429523637-60f5986cc1db?w=800&q=80",
   },
 ];
 
@@ -57,8 +57,8 @@ export const SERVICES = [
 export const PORTFOLIO_IMAGES = [
   {
     src: "/images/living room.jpeg",
-    alt: "Luxury Living Room Interior",
-    label: "Luxury Living Room – Hyderabad",
+    alt: "Elegant Living Room Interior",
+    label: "Elegant living room with decorative details – Hyderabad",
   },
   {
     src: "/images/bedroom wardrobe.jpeg",
@@ -83,27 +83,27 @@ export const PORTFOLIO_IMAGES = [
   {
     src: "/images/sleek wardrobe.jpeg",
     alt: "Sleek Custom Wardrobe",
-    label: "Sleek Custom Wardrobe – Hyderabad",
+    label: "Modern bedroom with sleek wardrobe – Hyderabad",
   },
   {
     src: "/images/caibents.jpeg",
     alt: "Premium Wall Cabinets",
-    label: "Premium Wall Cabinets – Hyderabad",
+    label: "Premium Wall Cabinets with warm lighting accents – Hyderabad",
   },
   {
     src: "/images/display unit.jpeg",
-    alt: "Custom Display Unit",
-    label: "Custom Display Unit – Hyderabad",
+    alt: "Modern Display Unit",
+    label: "Modern display unit with mirrored accents – Hyderabad",
   },
   {
     src: "/images/tv cabinet.jpeg",
-    alt: "Designer TV Cabinet",
-    label: "Designer TV Cabinet – Hyderabad",
+    alt: "Modern TV Cabinet",
+    label: "Modern living room with illuminated cabinets – Hyderabad",
   },
   {
     src: "/images/pvd partition.jpeg",
     alt: "PVD Partition",
-    label: "PVD Partition – Hyderabad",
+    label: "PVD pole partitions – Hyderabad",
   },
 ];
 

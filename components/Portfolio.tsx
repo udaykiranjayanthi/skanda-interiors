@@ -53,53 +53,56 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            {/* Carousel — full-width, no horizontal container padding */}
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
-                className="w-full shadow-2xl"
-            >
-                <Swiper
-                    modules={[Autoplay, Navigation, Pagination]}
-                    spaceBetween={0}
-                    slidesPerView={1}
-                    autoplay={{ delay: 5000, disableOnInteraction: false }}
-                    navigation
-                    pagination={{ clickable: true }}
-                    loop
-                    className="w-full"
+            {/* Carousel — full-width on mobile, padded + constrained on md+ */}
+            <div className="md:max-w-5xl md:mx-auto md:px-6 lg:px-8">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+                    className="w-full shadow-2xl"
                 >
-                    {PORTFOLIO_IMAGES.map(({ src, alt, label }) => (
-                        <SwiperSlide key={src}>
-                            {/* Responsive 16:9-ish ratio via aspect-ratio */}
-                            <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
-                                <Image
-                                    src={src}
-                                    alt={alt}
-                                    fill
-                                    className="object-cover"
-                                    sizes="100vw"
-                                    loading="lazy"
-                                />
-                                {/* Caption gradient + text */}
-                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent pt-20 pb-10 px-8 md:px-16">
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-6 h-px bg-[#B89B5E]" />
-                                        <p
-                                            className="text-white text-sm md:text-base tracking-widest uppercase"
-                                            style={{ fontFamily: "var(--font-cinzel)" }}
-                                        >
-                                            {label}
-                                        </p>
+                    <Swiper
+                        modules={[Autoplay, Navigation, Pagination]}
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        autoplay={{ delay: 5000, disableOnInteraction: false }}
+                        navigation
+                        pagination={{ clickable: true }}
+                        loop
+                        className="w-full"
+                    >
+                        {PORTFOLIO_IMAGES.map(({ src, alt, label }) => (
+                            <SwiperSlide key={src}>
+                                {/* Responsive 16:9-ish ratio via aspect-ratio */}
+                                <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
+                                    <Image
+                                        src={src}
+                                        alt={alt}
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 896px"
+                                        loading="lazy"
+                                        unoptimized
+                                    />
+                                    {/* Caption gradient + text */}
+                                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent pt-20 pb-10 px-8 md:px-16">
+                                        <div className="flex items-center gap-3">
+                                            <div className="w-6 h-px bg-[#B89B5E]" />
+                                            <p
+                                                className="text-white text-sm md:text-base tracking-widest uppercase"
+                                                style={{ fontFamily: "var(--font-cinzel)" }}
+                                            >
+                                                {label}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </motion.div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </motion.div>
+            </div>
         </section>
     );
 }
