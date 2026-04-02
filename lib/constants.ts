@@ -109,19 +109,19 @@ export const PORTFOLIO_IMAGES = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Skanda Interiors transformed our home beyond imagination. Every corner reflects elegance and the attention to detail is unmatched. Truly a world-class experience.",
-    name: "Priya & Karthik Sharma",
-    location: "Bangalore, Karnataka",
-  },
-  {
-    quote: "From concept to completion, the team was professional, creative, and deeply invested in our vision. Our modular kitchen is the envy of all our guests!",
-    name: "Anita Reddy",
+    quote: "A huge thank you to Skanda Interiors for transforming our house into a beautiful home! Their design team brought incredible creativity to the table, and the on-ground workers were professional, punctual, and highly skilled. The attention to detail in every corner is truly impressive. If you're looking for a team that balances aesthetics with quality execution, I highly recommend them!",
+    name: "Sai",
     location: "Hyderabad, Telangana",
   },
   {
-    quote: "The turnkey project was delivered on time, within budget, and exceeded every expectation. I wouldn't trust anyone else with my interiors.",
-    name: "Rajesh Nair",
-    location: "Chennai, Tamil Nadu",
+    quote: "I recently completed a home project with Skanda Interiors, and the experience was seamless. What stands out about them is the synergy between their design office and their on-site execution team. The designers are innovative, while the workers are disciplined and highly skilled craftsmen. It’s rare to find a firm that excels in both aesthetics and technical durability. Exceptional work!",
+    name: "Venkata Subbaih",
+    location: "Hyderabad, Telangana",
+  },
+  {
+    quote: "To the Skanda Interiors Family, They say a house is made of bricks and beams, but a home is made of hopes and dreams. Thank you for providing the artistry and the hard work to bridge that gap. We are so grateful for the patience of the design team and the sweat of the workers who made this possible. Our doors are always open to you!",
+    name: "Abhinav Varma",
+    location: "Hyderabad, Telangana",
   },
 ];
 

@@ -201,7 +201,7 @@ export default function Contact() {
                                 Chat on WhatsApp
                             </motion.a>
 
-                            {/* Instagram CTA */}
+                            {/* Instagram CTA
                             <motion.a
                                 href={INSTAGRAM_URL}
                                 target="_blank"
@@ -223,7 +223,7 @@ export default function Contact() {
                                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                                 </svg>
                                 Follow on Instagram
-                            </motion.a>
+                            </motion.a> */}
                         </div>
                     </motion.div>
 

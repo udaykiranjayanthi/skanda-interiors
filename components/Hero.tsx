@@ -49,7 +49,7 @@ export default function Hero() {
                         className="inline-block text-[#B89B5E] text-xs uppercase tracking-[0.5em] mb-6"
                         style={{ fontFamily: "var(--font-cinzel)" }}
                     >
-                        Est. 2014 · Luxury Interiors
+                        Est. 2022 · Luxury Interiors
                     </span>
                 </motion.div>
 
